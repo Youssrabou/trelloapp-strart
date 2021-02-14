@@ -1,0 +1,11 @@
+        <p> {{list.name}}</p>
+
+        <div cdkDropList (cdkDropListDropped) ="drop($event)">
+            <div cdkDrag *ngFor = "let card of list.cards">
+                <app-card [card] ="card" ></app-card>
+            </div>
+       </div> 
+
+
+<!-- card contient une value du parent -->
+

@@ -1,0 +1,19 @@
+<!-- <pre> {{board|json}}</pre> -->
+
+<div class="d-flex py-3">
+    <div class="list text-center" *ngFor="let list of board">
+      <button (click) = "delList()" class="btn btn-danger"> Effacer la liste</button>
+       <app-list [list]="list"></app-list>
+    </div>
+   <!-- /Ajouter une liste  -->
+    <div class=" list text-center">
+       <!-- add list est le nim de l'action -->
+       <button (click) = "addList()" class="btn btn-primary"> Ajouter une liste</button>
+    </div>
+ </div>
+
+
+
+
+
+
